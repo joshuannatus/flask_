@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Math from PYPTHON</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <div class = "simple">
+        <!-- Creating a Form-->
+        <form action="{{url_for("simple")}}" method="post">
+            <input type="text" name="Mathematics" placeholder="Maths" required="required" />
+            <input type="text" name="English" placeholder="English" required="required" />
+            <input type="text" name="Science" placeholder="Science" required="required" />
+
+            <button type="submit" class="btn btn-primary btn-block btn-large"> Calculate Button</button>
+        </form>
+    </div>
+    <div>
+        <h2>The average score is {{results}}</h2>
+    </div>
+
+  </body>
+</html>
